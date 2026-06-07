@@ -52,7 +52,7 @@ Validation Accuracy: 95.9%
 
 ### Prediction Result
 
-![Prediction](prediction_result.png)
+![Prediction](predicted_result.PNG)
 
 ### Top 5 Predictions
 
