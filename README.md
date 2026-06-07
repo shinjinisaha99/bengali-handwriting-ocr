@@ -43,8 +43,8 @@ Validation Accuracy: 95.9%
 ![Training](screenshots/training_curves.png)
 
 ### Streamlit Home Page
+![HOME](uploaded_image.PNG)
 
-![Home](screenshots/home_page.png)
 
 ### Prediction Result
 
