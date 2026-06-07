@@ -40,7 +40,7 @@ Validation Accuracy: 95.9%
 
 ### Training Curves
 
-![Training](screenshots/training_curves.png)
+![Training](training_curves.png)
 
 ### Streamlit Home Page
 ![HOME](uploaded_image.PNG)
@@ -48,11 +48,11 @@ Validation Accuracy: 95.9%
 
 ### Prediction Result
 
-![Prediction](screenshots/prediction_result.png)
+![Prediction](prediction_result.png)
 
 ### Top 5 Predictions
 
-![Top5](screenshots/top5_predictions.png)
+![Top5](top5_predictions.png)
 
 ## Model available on request (since file size is larger).
 
