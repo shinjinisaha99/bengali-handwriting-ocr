@@ -1,5 +1,4 @@
 
-Bengali Handwriting Recognition using CNN and Streamlit
 
 # Bengali Handwriting Recognition System
 
