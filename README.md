@@ -54,6 +54,8 @@ Validation Accuracy: 95.9%
 
 ![Top5](screenshots/top5_predictions.png)
 
+## Model available on request (since file size is larger).
+
 ## Author
 
 Shinjini Saha
