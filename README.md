@@ -36,6 +36,24 @@ Image Upload
 
 Validation Accuracy: 95.9%
 
+## Screenshots
+
+### Training Curves
+
+![Training](screenshots/training_curves.png)
+
+### Streamlit Home Page
+
+![Home](screenshots/home_page.png)
+
+### Prediction Result
+
+![Prediction](screenshots/prediction_result.png)
+
+### Top 5 Predictions
+
+![Top5](screenshots/top5_predictions.png)
+
 ## Author
 
 Shinjini Saha
