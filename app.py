@@ -3,6 +3,8 @@ import streamlit as st
 import numpy as np
 import cv2
 import json
+import os
+import gdown
 
 from PIL import Image
 from tensorflow.keras.models import load_model
@@ -16,28 +18,28 @@ st.set_page_config(
 
 @st.cache_resource
 def load_resources():
+    # Download model if not present
+    if not os.path.exists("bengali_ocr_model.keras"):
+        st.info("Downloading model... please wait.")
+        gdown.download(
+            "https://drive.google.com/uc?id=YOUR_MODEL_FILE_ID",
+            "bengali_ocr_model.keras",
+            quiet=False
+        )
+    if not os.path.exists("label_classes.npy"):
+        gdown.download(
+            "https://drive.google.com/uc?id=YOUR_LABEL_FILE_ID",
+            "label_classes.npy",
+            quiet=False
+        )
 
     model = load_model("bengali_ocr_model.keras")
-
-    classes = np.load(
-        "label_classes.npy",
-        allow_pickle=True
-    )
-
+    classes = np.load("label_classes.npy", allow_pickle=True)
     enc = LabelEncoder()
     enc.classes_ = classes
-
-    with open(
-        "bengali_map.json",
-        "r",
-        encoding="utf-8"
-    ) as f:
-
+    with open("bengali_map.json", "r", encoding="utf-8") as f:
         bmap = json.load(f)
-
     return model, enc, bmap
-
-model, encoder, bengali_map = load_resources()
 
 # ── Header ──────────────────────────────────────────
 
