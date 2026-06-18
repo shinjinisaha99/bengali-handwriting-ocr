@@ -22,8 +22,8 @@ def load_resources():
     if not os.path.exists("bengali_ocr_model.keras"):
         st.info("Downloading model... please wait.")
         gdown.download(
-            "https://drive.google.com/uc?id=YOUR_MODEL_FILE_ID",
-            "bengali_ocr_model.keras",
+            "1Km7rphuKHkIuB6YxO3n-_rtgwiwDjU4m",
+            "1cWRD2PfqDCN1fshv30682TT2v1d0nlxE",
             quiet=False
         )
     if not os.path.exists("label_classes.npy"):
